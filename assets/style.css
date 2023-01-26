@@ -35,3 +35,60 @@ body{
     border-radius: 5px;
 }
 
+.container button{
+    width: 100%;
+    height: 50px;
+    margin: 20px 0;
+    color: #fff;
+    font-weight: 500;
+    background: #494eea;
+    border: 0;
+    outline: 0;
+    border-radius: 5px;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.1);
+    cursor: pointer;
+}
+
+#imgBox{
+    max-height: 0;
+    width: 200px;
+    border-radius: 5px;
+    overflow: hidden;
+    transition: max-height 1s;
+}
+
+#imgBox img{
+    width: 100%;
+    padding: 10px;
+}
+
+#imgBox.show-img{
+    max-height: 300px;
+    margin: 10px auto;
+    border: 1px solid #d1d1d1;
+}
+
+.container input.error-color{
+    border: 1px solid #ff0000;
+    box-shadow: 0 0 10px 2px rgba(255, 0, 0, 0.2);
+}
+.error{
+    animation: shake 0.1s linear 10;
+}
+@keyframes shake {
+    0% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(-2px);
+    }
+    50% {
+        transform: translateX(0);
+    }
+    75% {
+        transform: translateX(2px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
